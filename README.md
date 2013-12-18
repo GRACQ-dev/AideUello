@@ -1,4 +1,4 @@
 UelloManuel
 ===========
 
-The Manuel-Blop of Uello developed with jekyll.
+The manuel of Uello developed with jekyll.
