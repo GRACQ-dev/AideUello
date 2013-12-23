@@ -1,0 +1,51 @@
+#menu {
+	height: 80px;
+}
+
+nav {
+    background-color: #333333;
+    display: block;
+    min-height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+}
+
+nav ul {
+    display: table;
+    float: right;
+    margin: 0;
+    vertical-align: middle;
+    list-style: none outside none;
+    padding-right: 40px;
+}
+
+nav li {
+    display: table-cell;
+    height: 60px;
+    line-height: 58px;
+    margin: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+nav li > a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 1.5rem;
+    height: 60px;
+    line-height: 58px;
+    padding: 0 16px;
+    text-decoration: none;
+}
+
+nav li > a:hover {
+    color: #88aa00;
+}
+
+#content {
+    width: 960px;
+    margin: 0 auto;
+}

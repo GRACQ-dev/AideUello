@@ -1,0 +1,17 @@
+span.jelp_trigger, div.jelp_marker_label {
+	color: red;
+}
+
+span.jelp_trigger_select, div.jelp_marker_label_select {
+	color: #3f3ab0;
+}
+
+div.jelp_label_container {
+	position: absolute;
+    left:35px;
+   	top:20px;
+}
+
+div.jelp_marker { 
+    position: absolute;
+}
