@@ -4,6 +4,7 @@ var jelp = function () {
         generic_icon_name = 'js/Jelp/img/arrow_';
         generic_icon_type = '.png';
         icon_width = 70;
+        icon_height = 58;
 
 
     function init(img_class_name, trigger_class_name, generic_icon_name_arg, icon_size_arg, generic_icon_type_arg) {
@@ -19,11 +20,13 @@ var jelp = function () {
             generic_icon_type = generic_icon_type_arg;
         }
 
-        $('.' + img_class_name).each(function() {
-            init_img_container(this);
-        });
+        imagesLoaded('.' + img_class_name, function() {
+            $('.' + img_class_name).each(function() {
+                init_img_container(this);
+            });
 
-        init_trigger_for_class(trigger_class_name);
+            init_trigger_for_class(trigger_class_name);
+        });        
     }
 
     function init_img_container(img_arg) {
@@ -74,7 +77,6 @@ var jelp = function () {
             hover_icon_url,
             icon_url,
             icon_img,
-            icon_height,
             icon_container,
             label_container,
             top,
@@ -86,7 +88,6 @@ var jelp = function () {
         icon_img_normal.attr('id', marker_json.id + '_img_normal');
 
         icon_img_normal.width(icon_width);
-        icon_height = icon_img_normal.height();
 
         icon_container = icon_img_normal.wrap('<div class="marker_container" />').parent();
         icon_container.width(icon_width)
@@ -110,7 +111,7 @@ var jelp = function () {
 
         // check if top and left are 0.XXX -> pecentage
         if(parseFloat(marker_json.y) % 1 !== 0 && parseInt(marker_json.y) === 0) {
-            top = (parseFloat(img_container.height()) * parseFloat(marker_json.y)) - (parseFloat(icon_img_normal.height()) / 2) ;
+            top = (parseFloat(img_container.height()) * parseFloat(marker_json.y)) - (parseFloat(icon_height) / 2);
         }
         else {
             top = marker_json.y
