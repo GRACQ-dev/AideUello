@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{{ content }}
+{{ content | toc_generate }}
 
 {{ if page.js }}
 	<script type="text/javascript">
