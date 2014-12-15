@@ -48,3 +48,7 @@ Un courrier électronique sera automatiquement envoyé au gestionnaire pour l'in
 Quand un signalement est sélectionné, vous pouvez choisir l'état du signalement. L'état définit la couleur du marqueur du signalement. Les différents états sont rejeté (gris), pas encore pris en compte (blanc), pris en compte (rouge), en cours de résolution (orange) et résolu (vert). Pour choisir l'état du signalement, il suffit de cliquer sur le <span id="span_choisir_etat" data-marker="m_img_choisir_etat" class="trigger">bouton d'édition à coté du champ "Note du conseiller en mobilité (CeM)"</span>, de choisir dans la liste l'état et d'appuyer sur l'icône "sauver".
 
 <img id="img_choisir_etat" class="img_help" src="img/screenshots/details_cem.png" border="1" alt="Modifier l'état d'un signalement" data-jelp-img-width="958px" data-jelp-markers='[{"id":"m_img_choisir_etat","x":0.81, "y":0.695, "label":"1", "color":"red", "hover_color":"blue"}]'  />
+
+<h1>Uello en wms</h1>
+
+L'adresse internet pour accéder au wms est http://uello.be:8080/geoserver/Uello/wms
