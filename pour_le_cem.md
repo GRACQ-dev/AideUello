@@ -51,4 +51,4 @@ Quand un signalement est sélectionné, vous pouvez choisir l'état du signaleme
 
 <h1>Uello en wms</h1>
 
-L'adresse internet pour accéder au wms est http://uello.be:8080/geoserver/Uello/wms
+L'adresse internet pour accéder au wms est <a href="http://uello.be:8080/geoserver/Uello/wms">http://uello.be:8080/geoserver/Uello/wms</a>.
